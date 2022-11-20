@@ -10,7 +10,7 @@ model=load_model('/content/drive/MyDrive/Colab Notebooks/Dataset/nutrition.h5')
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("main.html")
 
 @app.route('/predict',methods=['GET','POST'])
 def upload():
