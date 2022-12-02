@@ -1,0 +1,173 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    /* margin: 2em; */
+    margin-top: 4.5rem;
+    margin-bottom: 3rem;
+  
+  }
+  .list-nav{
+    display: flex;
+    gap: 3.5em;
+    --gap: clamp(1.5rem, 5vw, 3.5rem);
+    --underline-gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Calibri";
+    color: #375A64;
+    font-weight: 500;
+    font-size: 31px;
+    list-style: none;
+    margin-right: 40rem;
+    margin-left:60rem;   
+  }
+ .link{
+    text-decoration: none;
+ }
+  .header-logo{
+    margin-left: 14rem;
+    width: 4.8rem;
+    height: 3.8rem;
+
+  }
+.button{
+    width: fit-content;
+    font-size: 30px;
+    padding: 20px;
+    background: #375A64;
+    color: #ffffff;
+    margin-top: 2rem;
+    border-radius: 20px;
+    border-color: #375A64;
+    border-bottom-color: #375A64;
+    box-shadow: none;
+    border-style: none;
+}
+  /* ------------ */
+    /* ============== Nav Animation================== */
+    .hover-underline-animation {
+      display: inline-block;
+      position: relative;
+      color: #164659;
+    }
+    
+    .hover-underline-animation:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #164659;
+      color:orange;
+      
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    
+    .hover-underline-animation:hover:after {
+       transform: scaleX(1);
+      transform-origin: bottom left;
+      
+    }
+
+
+
+    /* ------------------------- flex---------------- */
+ 
+   
+      .hero-container{
+        display: flex;
+        flex-direction: row;  
+        margin-top: 10rem;
+        margin-left: 2rem;
+        font-size:3rem;
+        width: 100%;
+        font-family: "calibri";
+        justify-content: center;
+        margin-right: 26rem;
+        color: #375A64;
+        font-weight: 200;    
+    
+    }
+    .hello{
+        font-size:4.5rem;
+        font-weight: 500; 
+    }
+    .intro{
+     display: flex;  
+     flex-direction: column;
+    margin-top: 4.2rem;
+    margin-left: 10rem;
+    }
+    
+    .pcontent{
+        font-size: 25px;
+        max-width:70%;
+    }
+    .avatar{
+    
+        
+        max-width: 50%;
+        max-height: 600px;
+       
+       margin-bottom: 2rem;
+       
+    }
+    /* ------------------------ container 2------------- */
+   .conttwo{
+       margin-left:2rem ;
+      
+   }
+    .twop{
+        font-size: 1em;
+        color: #FF735C;
+      
+    }
+    .tp{
+        font-size: 30px;
+        padding-right: 5rem;
+        max-width: 95%;
+        margin-top: 2rem;
+    }
+    .tin{
+        padding-left: 6rem;
+       
+    }
+    .avatartwo{
+        padding-left:10rem;
+
+    }
+    /* --------------------------- */
+    .introthree{
+        margin-left: 1rem; 
+        max-width: 55%;
+        padding-right: 0;
+        margin:0;
+    }
+    .avatarthree{
+        max-width: 50%;
+        max-height: 600px;
+       
+       margin-bottom: 2rem;
+    }
+    /* ---------------- footer------------------------------ */
+    .footbar{
+        background-color: #375A64;
+        
+        width: 100%;
+        height: 100px;
+        width: 100%;
+       
+      }
+    
+    
+    
+    
+    
+    
+    
+    

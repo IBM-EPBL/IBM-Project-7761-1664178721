@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="prereq.css">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/demo.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/prereq.css')}}">
+   
+    <title>Nutrino</title>
+    
+  </head>
+  <body>
+    <!-- ----------------------- Navbar section ------------------------------------------------->
+    <div class="header">
+      <img class="header-logo" src="{{url_for('static', filename='images/logo.svg')}}" alt ="no" >      
+      <div class="list-nav mobile-nav-toggle">         
+       
+          
+           <a class ="nav-link hover-underline-animation link"  href ="/">Home</a>
+          <a class ="nav-link hover-underline-animation link" href ="image">Prediction</a>          
+          <a class ="nav-link hover-underline-animation link" href ="manual"> Blogs</a>
+          </div>
+    </div> 
+   <!-------------------------- container 1---------------------------------------------------------------->
+   <div class="hero-container ">
+    <div class="intro">
+    <p class="hello">Nutrino!</p>
+    <p class="name">Nothing can be unnoticed!</p>
+    <p class="pcontent">Know the Nutritional value of your food in few seconds and maintain healthy diet..!</p>
+    <button type ="button" class="button" onclick="location.href='./image';"><p>Get Started!</p> </button>
+    </div>
+    
+      <img class="avatar" src="{{url_for('static', filename='images/food1.jpg')}}" alt ="no" >
+    
+   </div>
+<!-- ---------------------------- container 2---------------------------- -->
+
+<div class="hero-container conttwo">
+  
+  <img class="avatar avatartwo" src="{{url_for('static', filename='images/food3.jpg')}}" alt ="no" >
+  <div class="intro tin">
+  
+  <p class="hello twop">How we will help you?</p>
+  <p class="name tp">Are you confused about your daily Nutritional intake...?<br>
+    Here we are help you out from this Problem.Upload Your food image in our website to find their Nutritional Content<br>
+    For more read our User Manual.
+    
+    </p>
+  </div>
+  
+  
+ </div>
+<!-- ----------------------- container 3------------------------------------ -->
+<div class="hero-container ">
+  <div class="intro tin introthree">
+  
+    <p class="hello twop">What you will gain?</p>
+    <p class="name tp">By knowing  your daily Nutritional intake,you can manage your Diet Plan and can be free from worrying about Weight gain,Weight loss and extra..extra problems you have faced due to unhealthy Diet Plan <br>
+    You can Enjoy your Life!
+      
+      </p>
+    </div>
+  
+    <img class="avatar" src="{{url_for('static', filename='images/exe.jpg')}}" alt ="no" >
+  
+ </div>
+   <!-- ------------------------------------------------------------------------------------- -->
+   <div class="footbar">
+    <div class="footer">
+    <div class="items">
+
+ </div>  
+</div>
+</div>
+  
+  
+  
+  </body>
+</html>

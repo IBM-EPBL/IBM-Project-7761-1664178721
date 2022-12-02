@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI based analyzer for Fitness Enthusiasts </title>
+    <link rel="stylesheet" href="./demo2.css">
+    <link rel="stylesheet" href="./prereq.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/demo2.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/prereq.css')}}">
+</head>
+<body>
+    <!---------------------------------------------------- -->
+    <div class="header">
+        <img class="header-logo" src="{{url_for('static', filename='images/logo.svg')}}"alt ="no" >      
+        <div class="list-nav mobile-nav-toggle">         
+         
+            
+             <a class ="nav-link hover-underline-animation link"  href ="/">Home</a>
+            <a class ="nav-link hover-underline-animation link" href ="image"> Prediction</a>          
+            <a class ="nav-link hover-underline-animation link" href ="manual"> Blogs</a>
+            </div>
+      </div> 
+    <!-- ---------------------------------------------------------------- -->
+    <main id="classify-main">
+    <div class ="imageclassify">
+        <div class ="sideimage">
+            <img class="side"  src="{{url_for('static', filename='images/food2.jpg')}}" alt ="no" > 
+        </div>
+        <div class="classifysection">
+           <p class="classpara"> Choose an image</p> 
+           <div class="bt">
+           <div class="buttonsection">       
+            <button class="primary-button button">Choose</button>
+            <img src="" alt="" id="image-viewer">
+            <button class="secondary-button button">Classify</button>
+        </div>
+        </div>  
+        </div>
+    </div>
+    <div id="output">
+        <h3 class="output">Output</h3>
+        <p class ="outputdes">Food is classified as:</p>
+        <div id="output-wrapper">
+            <p id="output-result"></p>
+            <p id="output-api-result"></p>
+       </div>
+   </div>
+</main>
+<div class="footbar">
+
+</div>
+
+
+
+</body>
+<script src="{{url_for('static', filename='js/app.js')}}"></script>
+</html>

@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+:root{
+    --primary-color: lightgreen;
+    --primary-color-opacity: rgba(144, 238, 144, 0.8);
+}
+body{
+    background: url("../images/fruits.jpg") no-repeat center top/cover;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Classes */
+.page-selected{
+    background: var(--primary-color);
+    color: white;   
+}
+.page-selected a{
+    color: white;
+}
+.primary-button, .secondary-button{
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px; 
+}
+.primary-button{
+    background: var(--primary-color);
+}
+.secondary-button{
+    background: rgb(50, 50, 208);
+}
+.primary-button:hover, .secondary-button:hover{
+    cursor: pointer;
+}
+
+/* Nav bar */
+nav{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background: rgba(243, 243, 243, 0.8);
+}
+nav > h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+nav > ul{
+    display: flex;
+}
+nav > ul > li{
+    padding: 2rem;
+    font-size: 1.3rem;
+    transition: 0.25s;
+}
+nav > ul > li:hover{
+    background: var(--primary-color-opacity);
+}
+nav > ul > li:hover > a{
+    color: white;
+}
+nav > ul > li > a{
+    color: black;
+    transition: 0.25s;
+}
+
+/* Home Page */
+#home-main{
+    background: var(--primary-color-opacity);
+    margin: 23rem auto;
+    width: 70rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Classify Page */
+#classify-main{
+    background: none;
+    width: 50rem; 
+    margin: 13rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3rem;
+}
+#classify-main h3{
+    margin-bottom: 2rem;
+}
+#classify-main .secondary-button{
+    margin-top: 2rem;
+}
+#classify-main > div, #output{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#output h3{
+    margin-bottom: 4rem;
+}
+#output > p{
+    text-decoration: underline;
+    display: none;
+}
+#classify-main > div p{
+    text-align: center;
+    overflow-wrap: break-word;
+    max-width: 50rem;
+    font-size: 1.3rem;
+    font-weight: 500; 
+    margin-top: 2rem;
+}
+#output-wrapper{
+    background: rgba(243, 243, 243, 0.7);
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    display: none;
+}
+#output-wrapper > p:first-child{
+    margin-top: none;
+}
+#output-wrapper > p:last-child{
+    margin-top: 4rem;
+}
